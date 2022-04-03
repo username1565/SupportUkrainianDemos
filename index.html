@@ -1,0 +1,30 @@
+<html>
+<head>
+<link href="./style.css" rel="stylesheet">
+<script src="addresses.js" type="text/javascript"></script>
+</head>
+<body onload="initialize();">
+	<div>
+		<a href="https://news.un.org/en/story/2022/03/1114052"><font color="white">STOP</font></a>
+		<a href="https://en.wikipedia.org/wiki/2022_Russian_invasion_of_Ukraine"><font color="red">RUSSIAN INVASION</a></font> <a href="https://liveuamap.com/"><font color="white">OF UKRAINE</font></a></font>
+		- SUPPORT
+		<font color="lightblue">UKRAINIAN</font>
+		<font color="yellow">DEMOS</font>
+		<br>
+		
+		<font>
+		(
+			currency
+			<span id="select_currency"></span>
+			<button onclick="update_address()">OK</button>
+			address: 
+			<span class="tooltip">
+				<span id="address" onclick="CopyToClipboard(this.innerHTML)" onmouseout="ResetTooltip()">donation_address</span>
+				<span class="tooltiptext" id="myTooltip">Copy</span>
+			</span>
+		)
+		</font>
+	</div>
+	<br>
+</body>
+</html>
