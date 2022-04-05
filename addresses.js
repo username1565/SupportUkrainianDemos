@@ -9,6 +9,7 @@ var addresses = {
 ,	'rvn'	:	['RavenCoin (RVN)', 											'RNBzvqarGsE4LC8BkAQQP7Z8qcrC1Yz3AM'			]
 };
 
+
 var selected = 'rvn';
 
 function initialize(){
