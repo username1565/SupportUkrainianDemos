@@ -7,6 +7,6 @@
 -	ERC-20		( USDT, USDC, tokens )		:	0x3D574475714520054D4aAABDf28832894fE35BD3
 -	Tron		( TRX )						:	TGM8zXQsm2Fi7CKnqw1d4cUYPKBmtaftrq
 -	TRC-20		( USDT )					:	TGM8zXQsm2Fi7CKnqw1d4cUYPKBmtaftrq
--	RavenCoin	( RVN )						:	RNBzvqarGsE4LC8BkAQQP7Z8qcrC1Yz3AM
+-	RavenCoin	( RVN )						:	R9wYUJUFGM3GZrrSjHdB9JVMyhzWXN3Hs6
 
 Email: SupportUkrainianDemos@protonmail.com

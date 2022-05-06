@@ -6,20 +6,25 @@ var addresses = {
 ,	'erc20'	:	['ERC20 (USDT, USDC, tokens)',									'0x3D574475714520054D4aAABDf28832894fE35BD3'	]
 ,	'trx'	:	['Tron (TRX)',													'TGM8zXQsm2Fi7CKnqw1d4cUYPKBmtaftrq'			]
 ,	'trc20'	:	['TRC-20 (USDT)',												'TGM8zXQsm2Fi7CKnqw1d4cUYPKBmtaftrq'			]
-,	'rvn'	:	['RavenCoin (RVN)', 											'RNBzvqarGsE4LC8BkAQQP7Z8qcrC1Yz3AM'			]
+,	'rvn'	:	['RavenCoin (RVN)', 											'R9wYUJUFGM3GZrrSjHdB9JVMyhzWXN3Hs6'			]
 };
 
 
-var selected = 'rvn';
+var selected = 'rvn'; //default coin
 
 function initialize(){
 
 	var html = ''
-	html += '<select id="currency" name="select" style="display: inline-block;" onclick="update_address()"> <!--Supplement an id here instead of using "name"-->';
+	html	+=	'<select id="currency" name="select" style="display: inline-block;" onclick="update_address()">'
+			+	'<!--Supplement an id here instead of using "name"-->'
+	;
 
-	Object.entries(addresses).forEach(([key, value]) => {
-		html += '<option value="'+key+'"	'+ ( ( key === selected ) ? 'selected' : '' ) + '>'+ value[0] + '</option>' ;
-	});
+	for(var coin in addresses){
+		if (addresses.hasOwnProperty(coin))
+		{
+			html += '<option value="'+coin+'"	'+ ( ( coin === selected ) ? 'selected' : '' ) + '>'+ addresses[coin][0] + '</option>' ;
+		}
+	}
 	
 	html += '</select>';
 	
