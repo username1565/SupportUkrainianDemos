@@ -54,7 +54,7 @@ function CopyToClipboard(text) {
 		navigator.clipboard.writeText(text);
 	}
 	else{
-		alert(text);
+		prompt("Copy address: ", text);
 	}
 
   var tooltip = document.getElementById("myTooltip");
